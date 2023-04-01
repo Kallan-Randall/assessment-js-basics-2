@@ -88,7 +88,8 @@ function canWeDeliverTwo (zipCode) {
         }
     }
 }
-console.log(canWeDeliverTwo(99999))
+// console.log(canWeDeliverTwo(99999))
+
 //////////////////PROBLEM 3////////////////////
 /* 
     Below is an array of objects that have some
@@ -123,9 +124,10 @@ const deals = [
 */
 
 //CODE HERE
+deals[0].title = deals[0].title.replace(`15%`, `10%`)
 
 
-
+// console.log(deals[0].title)
 /*
     The restaurant is going to continue its
     family deal for another month. 
@@ -140,3 +142,6 @@ const deals = [
 */
 
 //CODE HERE
+// deals[].
+deals[1].desc = deals[1].desc.replace('March', 'April').trim();
+console.log(deals[1].desc)
