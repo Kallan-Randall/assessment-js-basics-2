@@ -35,7 +35,8 @@ const cart = [
 
 //CODE HERE
 
-// const summedPrice = cart.reduce(/* CALLBACK HERE */)
+const summedPrice = cart.reduce((acc, item) => acc + item.price, 0)
+console.log(summedPrice)
 
 
 //////////////////PROBLEM 2////////////////////
@@ -54,7 +55,12 @@ const cart = [
 */
 
 //CODE HERE
-
+function calcFinalPrice(cartTotal, couponValue, tax) {
+    const taxTotal = cartTotal * tax
+    const subtotal = cartTotal + taxTotal
+    const finalPrice = subTotal - couponValue
+    return finalPrice
+}
 
 
 //////////////////PROBLEM 3////////////////////
@@ -79,7 +85,10 @@ const cart = [
 
 /*
     TEXT ANSWER HERE
-
+1. Name - This property is the customers name as a string data type. This is a basic but vital component as it tells us who the data data is for. 
+2. Email - This property is the customers Email address as a string. Another simple but important data type as it allows for communiication with the customer.
+3. Phone - The customers phone number as a string. Holds the customers phone number which is an important way to communicate with the customer.
+4. Address - The customers address as a string type. Holes the information for the customer. Important for recieving deliveries. 
 */
 
 /*
@@ -88,3 +97,9 @@ const cart = [
 */
 
 //CODE HERE
+const customer = {
+    name: 'Kallan Randall',
+    email: 'Example@email.com',
+    phone: '(435) 111-3333',
+    address: '111 N 222E Made up town, Ut.'
+}
